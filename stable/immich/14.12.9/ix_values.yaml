@@ -78,7 +78,7 @@ persistence:
         microservices:
           mountPath: /microcache
   library:
-    enabled: true
+    enabled: false
     mountPath: /usr/src/app/upload/library
     targetSelector:
       # Main pod/container is server
@@ -87,7 +87,7 @@ persistence:
       microservices:
         microservices: {}
   uploads:
-    enabled: true
+    enabled: false
     mountPath: /usr/src/app/upload/upload
     targetSelector:
       # Main pod/container is server
